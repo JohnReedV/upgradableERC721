@@ -33,6 +33,10 @@ module.exports = {
       url: "https://rinkeby.infura.io/v3/ae94f3eadcfd48f286974c1e3184a336",
       accounts: [process.env.PRIVATE_KEY],
     },
+    ethereum: {
+      url: "https://mainnet.infura.io/v3/ae94f3eadcfd48f286974c1e3184a336",
+      accounts: [process.env.PRIVATE_KEY]
+    }
   },
   etherscan: {
     apiKey: process.env.API_KEY

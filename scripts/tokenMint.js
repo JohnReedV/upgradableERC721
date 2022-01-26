@@ -1,11 +1,6 @@
 //mint new token
 
-const provider = new ethers.providers.JsonRpcProvider(
-  "https://rpc.api.moonbeam.network"
-);
-
-
-async function mint(uri) {
+async function test(uri) {
   const [accounts] = await ethers.getSigners();
   const instance = await ethers.getContractFactory("yakimaSmiles");
   const address = "0x62aAEf1F93C84B557ffDD3c1C8618cFa1aA51316";
@@ -34,7 +29,7 @@ async function append(image) {
     description: saying
   }
 
-  await mint(object)
+  await test(object)
 
 }
 

@@ -1,6 +1,3 @@
-const provider = new ethers.providers.JsonRpcProvider(
-    "https://rpc.api.moonbeam.network"
-  );
   
   async function burn() {
     const [accounts] = await ethers.getSigners();
